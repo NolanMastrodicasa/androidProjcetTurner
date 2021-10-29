@@ -25,7 +25,7 @@ phone.forward(100)
 phone.right(180)
 phone.pendown()
 phone.pensize(2)
-for i in range(2):
+for i in range(2): # draws the phone border
     phone.forward(150)
     phone.left(90)
     phone.forward(225)
@@ -45,7 +45,7 @@ phone.forward(25)
 phone.left(90)
 phone.pendown()
 
-for i in range(3):
+for i in range(3): # draws the icons with random colors
     phone.color(random.choice(colors))
     phone.penup()
     phone.forward(37)
@@ -93,14 +93,14 @@ phone.forward(75)
 phone.pendown()
 phone.circle(3)
 
-phone.penup()
+phone.penup() # prints sugmin is calling at the top the phone.
 phone.right(90)
 phone.forward(50)
 phone.left(90)
 phone.backward(35)
 phone.pensize(5)
 phone.color("black")
-phone.write("Sugmin Is Calling!")
+phone.write("Sugmin Is Calling!") 
 phone.pensize(1)
 phone.goto(-22,25)
 
@@ -112,7 +112,7 @@ if Answer == "yes":
         from playsound import playsound
         playsound('My_audio.mp3')
 
-        for i in range(30):
+        for i in range(30): # loops movement
             phone.penup()
             movement = random.randint(5,10)
             phone.forward(movement)
