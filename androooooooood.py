@@ -5,7 +5,7 @@ import time
 screen_h = 400
 screen_w = 420
 
-wn = trtl.Screen()
+wn = trtl.Screen() # makes turtle cell phone symbol
 wn.setup(width=screen_w, height=screen_h)
 turtle_image = "call2.gif"
 wn.addshape(turtle_image)
@@ -13,7 +13,8 @@ phone = trtl.Turtle(shape=turtle_image)
 
 android_color = str(input("Pick a color for your brand new galaxy note 7!: "))
 
-colors = ["red", "green", "blue", "purple", "black", "salmon", "yellow"]
+# Code to draw the phone
+colors = ["red", "green", "blue", "purple", "black", "salmon", "yellow"]# creates random color list 
 phone.color(android_color)
 phone.speed(10)
 phone.penup()
@@ -103,10 +104,10 @@ phone.write("Sugmin Is Calling!")
 phone.pensize(1)
 phone.goto(-22,25)
 
-Answer = str(input("Do you pick up?"))
+Answer = str(input("Do you pick up?")) # asks user if they answer or not
 if Answer == "yes":
 
-    for i in range(500):
+    for i in range(500): # loops sound and movement
         time.sleep(0.5)
         from playsound import playsound
         playsound('My_audio.mp3')
